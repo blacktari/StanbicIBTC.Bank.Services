@@ -1,0 +1,38 @@
+﻿# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# User-specific files (do not track project-specific user files)
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]Release/
+[Dd]ReleasePublic/
+x64/
+x86/
+
+# Uncomment if you have tasks that create project files
+# build/
+# bin/
+# obj/
+
+# Windows Installer files (if not used)
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Visual Studio configuration files (if not used)
+*.vspscc
+.vsconfig
+
+# Sensitive configuration files (e.g., environment variables, appsettings)
+.env
+appsettings.Development.json
+appsettings.Production.json
