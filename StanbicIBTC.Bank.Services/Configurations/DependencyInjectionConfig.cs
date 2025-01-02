@@ -1,8 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using StanbicIBTC.Bank.Services.Interfaces;
-using StanbicIBTC.Bank.Services.Services;
-
-namespace StanbicIBTC.Bank.Services.Configurations
+﻿namespace StanbicIBTC.Bank.Services.Configurations
 {
     public static class DependencyInjectionConfig
     {

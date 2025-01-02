@@ -3,9 +3,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using StanbicIBTC.Bank.Services.Models;
-using StanbicIBTC.Bank.Services.Services;
-using StanbicIBTC.Bank.Services.Interfaces;
 using StanbicIBTC.Bank.Services.Data;
+using StanbicIBTC.Bank.Services.Services.Interfaces.Customer;
+using StanbicIBTC.Bank.Services.Services.Implementations.Customer;
+using StanbicIBTC.Bank.Services.Interfaces;
 
 namespace StanbicIBTC.Bank.Services
 {
@@ -22,6 +23,7 @@ namespace StanbicIBTC.Bank.Services
             // Register application services
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<ITransactionService, TransactionService>();
 
 
             // Add controllers (Web API)

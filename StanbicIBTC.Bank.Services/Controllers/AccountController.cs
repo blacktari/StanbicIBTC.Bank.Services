@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StanbicIBTC.Bank.Services.Models;
-using StanbicIBTC.Bank.Services.Services;
-using StanbicIBTC.Bank.Services.Interfaces;
 using StanbicIBTC.Bank.Services.Exceptions;
-using Microsoft.Extensions.Logging;
 using StanbicIBTC.Bank.Services.DTOs.Request;
 
 namespace StanbicIBTC.Bank.Services.Controllers

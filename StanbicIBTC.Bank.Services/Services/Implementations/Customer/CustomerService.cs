@@ -1,8 +1,8 @@
-﻿using StanbicIBTC.Bank.Services.Interfaces;
-using StanbicIBTC.Bank.Services.Models;
+﻿using StanbicIBTC.Bank.Services.Models;  
 using StanbicIBTC.Bank.Services.Data;
+using StanbicIBTC.Bank.Services.Services.Interfaces.Customer;
 
-namespace StanbicIBTC.Bank.Services.Services
+namespace StanbicIBTC.Bank.Services.Services.Implementations.Customer
 {
     public class CustomerService : ICustomerService
     {
@@ -13,9 +13,9 @@ namespace StanbicIBTC.Bank.Services.Services
             _context = context;
         }
 
-        public async Task<Customer> CreateCustomerAsync(CustomerCreationRequest request)
+        public async Task<Models.Customer> CreateCustomerAsync(CustomerCreationRequest request)
         {
-            var customer = new Customer
+            var customer = new Models.Customer 
             {
                 FullName = request.FullName,
                 DateOfBirth = request.DateOfBirth,
@@ -30,7 +30,7 @@ namespace StanbicIBTC.Bank.Services.Services
             _context.Customers.Add(customer);
             await _context.SaveChangesAsync();
 
-            return customer;
+            return customer; // Return customer of type 'Models.Customer'
         }
     }
 }
